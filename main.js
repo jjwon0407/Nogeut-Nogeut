@@ -252,5 +252,5 @@ server.listen(app.get("port"), () => {
   console.log(`Server running at http://localhost:${app.get("port")}`);
 });
 
-// io 객체를 내보내기
+// io 객체를 내보내는 코드
 module.exports = { io, server };
