@@ -4,6 +4,9 @@ pipeline {
             image 'node:18.15.0'
         }
     }
+    environment {
+        GITHUB_TOKEN = credentials('github')  // 설정한 GitHub Token
+    }
     stages {
         stage("Clone Repository") {
 		steps {
