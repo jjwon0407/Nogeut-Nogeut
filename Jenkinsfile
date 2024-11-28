@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18.15.0'
-        }
-    }
+    agent any
     environment {
         GITHUB_TOKEN = credentials('GitHub')  // 설정한 GitHub Token
     }
