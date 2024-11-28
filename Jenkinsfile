@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment {
-        GITHUB_TOKEN = credentials('github')  // 설정한 GitHub Token
+        GITHUB_TOKEN = credentials('GitHub')  // 설정한 GitHub Token
     }
     stages {
         stage("Clone Repository") {
