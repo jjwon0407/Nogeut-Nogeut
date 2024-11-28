@@ -8,7 +8,7 @@ pipeline {
         stage("Clone Repository") {
 		steps {
         	        // git 명령어는 steps 블록 안에 위치
-                	git url: 'https://github.com/jjwon0407/open-source-project.git'
+                	git url: 'https://github.com/jjwon0407/open-source-project.git', branch: 'main'
            	 }
 
         }
