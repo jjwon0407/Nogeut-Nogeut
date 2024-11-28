@@ -6,7 +6,11 @@ pipeline {
     }
     stages {
         stage("Clone Repository") {
-            git 'https://github.com/jjwon0407/open-source-project.git'
+		steps {
+        	        // git 명령어는 steps 블록 안에 위치
+                	git url: 'https://github.com/jjwon0407/open-source-project.git'
+           	 }
+
         }
         stage("Build image") {
             steps {
