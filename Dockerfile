@@ -12,8 +12,8 @@ COPY . /noguet
 # 프로젝트 의존성 설치
 RUN npm install
 
-ENV PORT 5000
-EXPOSE 5000
+ENV PORT 3030
+EXPOSE 3030
 
 # 애플리케이션 실행
 CMD ["node", "main.js"]

@@ -22,7 +22,7 @@ spec:
         image: jjwon0407/nogeut:latest
         imagePullPolicy: Always
         ports:
-          - containerPort: 5000
+          - containerPort: 3030
             name: nogeut
 ---
 apiVersion: v1
@@ -31,8 +31,8 @@ metadata:
   name: nogeut
 spec:
   ports:
-    - port: 3030
-      taargetPort: 5000
+    - port: 80
+      taargetPort: 3030
   selector:
     app: nogeut
     tier: nogeut
