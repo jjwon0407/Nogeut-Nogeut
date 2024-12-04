@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nogeut
+  labels: 
+    app: nogeut
+spec: 
+  replicas: 3
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: nogeut
+  template: 
+    metadata:
+      labels:
+        app: nogeut
+        tier: nogeut
+    spec:
+      containers:
+      - name: nogeut
+        image: jjwon0407/nogeut:latest
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 5000
+            name: nogeut
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nogeut
+spec:
+  ports:
+    - port: 3030
+      taargetPort: 5000
+  selector:
+    app: nogeut
+    tier: nogeut
+  type: LoadBalancer
