@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'sswu-open-source-project2024'
         CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = 'gke'
+        CREDENTIALS_ID = 'b03e50cf-d31f-4ab6-94cf-795bef4ff02b'
         GITHUB_TOKEN = credentials('GitHub')  // 설정한 GitHub Token
     }
     stages {
