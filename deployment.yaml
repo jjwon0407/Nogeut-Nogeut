@@ -21,13 +21,6 @@ spec:
       - name: nogeut
         image: jjwon0407/nogeut:latest
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "500Mi"  # 최소 메모리 요청
-            cpu: "500m"
-          limits:
-            memory: "1Gi"  # 최대 메모리 제한
-            cpu: "1000m"
         ports:
           - containerPort: 3030
             name: nogeut
