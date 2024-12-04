@@ -8,7 +8,7 @@ pipeline {
         GITHUB_TOKEN = credentials('GitHub')  // 설정한 GitHub Token
     }
     stages {
-        stage("Chechout code") {
+        stage("Checkout code") {
 		    steps {
                 chechout scm
             }
