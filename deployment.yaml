@@ -32,7 +32,7 @@ metadata:
 spec:
   ports:
     - port: 80
-      taargetPort: 3030
+      targetPort: 3030
   selector:
     app: nogeut
     tier: nogeut
