@@ -3,7 +3,7 @@
 <br/>
 2024 성신여자대학교 컴퓨터공학과 SW 경진대회 은상
 <br/>
-2024-2 오픈소스소프트웨어 
+2024-2 오픈소스소프트웨어 1팀
 
 ## 서비스 소개
 
@@ -11,6 +11,9 @@
 
 ## 실행 영상
 링크 추가 예정
+
+## 팀원
+<img width="1304" alt="스크린샷 2024-12-10 오전 2 46 11" src="https://github.com/user-attachments/assets/5b50390d-4ec7-4a7a-8e50-3ffc62ed0b2d">
 
 <details>
 <summary>담당 파트</summary>
@@ -21,6 +24,7 @@
 
 </div>
 </details>
+
 
 ## 팀 리포지토리
 
